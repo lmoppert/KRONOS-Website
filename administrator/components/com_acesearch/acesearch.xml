@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<!-- Start -->
+	<name>com_acesearch</name>
+	<author>JoomAce LLC</author>
+	<creationDate>28 April 2012</creationDate>
+	<copyright>2009-2012 JoomAce LLC</copyright>
+	<license>GNU/GPL, http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>2.5.1</version>
+	<description>AceSearch is a flexible and powerful Joomla! Search component with an easy-to-use user interface that provides searching through all components from front-end and back-end with custom fields.</description>
+
+	<!-- Frontend -->
+	<files folder="site">
+		<!-- Files -->
+		<filename>acesearch.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<!-- Folders -->
+		<folder>assets</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="languages/site">
+		<language tag="en-GB">en-GB/en-GB.com_acesearch.ini</language>
+	</languages>
+		
+	<!-- Backend -->
+	<administration>
+		<menu img="components/com_acesearch/assets/images/acesearch.png">COM_ACESEARCH</menu>
+		<submenu>
+	    	<menu link="option=com_acesearch" img="components/com_acesearch/assets/images/acesearch.png">COM_ACESEARCH_CPANEL</menu>
+	    	<menu link="option=com_acesearch&amp;controller=config&amp;task=edit" img="components/com_acesearch/assets/images/icon-16-as-config.png">COM_ACESEARCH_CONFIG</menu>
+	      	<menu link="option=com_acesearch&amp;controller=extensions&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-extensions.png">COM_ACESEARCH_EXTENSIONS</menu>
+	      	<menu link="option=com_acesearch&amp;controller=statistics&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-statistics.png">COM_ACESEARCH_STATISTICS</menu>
+			<menu link="option=com_acesearch&amp;controller=filters&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-filters.png">COM_ACESEARCH_FILTERS</menu>
+			<menu link="option=com_acesearch&amp;controller=search&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-search.png">COM_ACESEARCH_SEARCH</menu>
+	      	<menu link="option=com_acesearch&amp;controller=upgrade&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-upgrade.png">COM_ACESEARCH_UPGRADE</menu>
+	      	<menu link="option=com_acesearch&amp;controller=support&amp;task=support" img="components/com_acesearch/assets/images/icon-16-as-support.png">COM_ACESEARCH_SUPPORT</menu>
+	    </submenu>
+		
+		<files folder="admin">
+			<!-- Files -->
+			<filename>acesearch.php</filename>
+			<filename>configgg.xml</filename>
+			<filename>toolbar.acesearch.php</filename>
+			<filename>install.sql</filename>
+			<filename>index.html</filename>
+			<!-- Folders -->
+			<folder>adapters</folder>
+			<folder>assets</folder>
+			<folder>library</folder>
+			<folder>extensions</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB/en-GB.com_acesearch.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_acesearch.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<!-- Config -->
+	<config>
+		<fields>
+			<fieldset>
+				<field name="version_checker" default="1" />
+				<field name="cache_versions" default="1" />
+				<field name="cache_extensions" default="0" />
+				<field name="show_db_errors" default="0" />
+				<field name="show_properties" default="1" />
+				<field name="download_id" default="" />
+				<field name="suggestions_always" default="0" />
+				<field name="suggestions_engine" default="google" />
+				<field name="suggestions_yahoo_key" default="" />
+				<field name="suggestions_bing_key" default="" />
+				<field name="google" default="0" />
+				<field name="google_more_results" default="0" />
+				<field name="google_more_results_length" default="4" />
+				<field name="save_results" default="1" />
+				<field name="show_order" default="1" />
+				<field name="show_url" default="1" />
+				<field name="show_search_refine" default="1" />
+				<field name="show_display" default="1" />
+				<field name="show_ext_flt" default="1" />
+				<field name="show_adv_search" default="1" />
+				<field name="yahoo_sections" default="1" />
+				<field name="search_char" default="3" />
+				<field name="access_checker" default="1" />
+				<field name="result_limit" default="50" />
+				<field name="enable_complete" default="1" />
+				<field name="enable_suggestion" default="1" />
+				<field name="enable_highlight" default="1" />
+				<field name="show_desc" default="1" />
+				<field name="title_length" default="60" />
+				<field name="display_limit" default="15" />
+				<field name="description_length" default="350" />
+				<field name="max_search_char" default="20" />
+				<field name="blacklist" default="" />
+				<field name="results_format" default="1" />
+				<field name="date_format" default="l, d F Y" />
+				<field name="admin_show_url" default="1" />
+				<field name="admin_show_desc" default="1" />
+				<field name="admin_title_length" default="80" />
+				<field name="admin_show_display" default="1" />
+				<field name="admin_show_properties" default="1" />
+				<field name="admin_show_ext_flt" default="1" />
+				<field name="admin_enable_complete" default="1" />
+				<field name="admin_enable_suggestion" default="1" />
+				<field name="admin_enable_highlight" default="1" />
+				<field name="admin_description_length" default="350" />
+				<field name="admin_max_search_char" default="20" />
+				<field name="admin_result_limit" default="50" />
+				<field name="admin_show_page_title" default="1" />
+				<field name="admin_show_page_desc" default="1" />
+				<field name="highlight_textall" default="141414" />
+				<field name="highlight_all" default="ffffb2" />
+				<field name="highlight_back1" default="ffff9e" />
+				<field name="highlight_back2" default="ffadb1" />
+				<field name="highlight_back3" default="a3ccff" />
+				<field name="highlight_back4" default="abffd2" />
+				<field name="highlight_back5" default="ff8fe9" />
+				<field name="highlight_text1" default="0a080a" />
+				<field name="highlight_text2" default="242424" />
+				<field name="highlight_text3" default="0f0b0f" />
+				<field name="highlight_text4" default="141214" />
+				<field name="highlight_text5" default="1a191a" />
+			</fieldset>
+		</fields>
+	</config>
+	
+	<!-- Install/Uninstall SQL -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<!-- Install/Uninstall File -->
+	<installfile>install.acesearch.php</installfile>
+	<uninstallfile>uninstall.acesearch.php</uninstallfile>
+	
+	<!-- Extensions -->
+	<extensions>
+		<extension option="com_banners" ordering="3" />
+		<extension option="com_content" ordering="1" />
+		<extension option="com_components" ordering="9" />
+		<extension option="com_menus" ordering="6" />
+		<extension option="com_modules" ordering="8" />
+		<extension option="com_newsfeeds" ordering="4" />
+		<extension option="com_plugins" ordering="10" />
+		<extension option="com_users" ordering="7" />
+		<extension option="com_weblinks" ordering="2" />
+	</extensions>
+	
+	<!-- Modules -->
+	<modules>
+		<module path="modules/site/mod_acesearch" title="AceSearch - Search" position="left" ordering="-1" published="1" client="site" />
+		<module path="modules/admin/mod_acesearch_admin" title="AceSearch - Search" position="menu" ordering="-1" published="1" client="administrator" />
+		<module path="modules/admin/mod_acesearch_quickicons" title="AceSearch - Quick Icons" position="icon" ordering="-1" published="1" client="administrator" />
+	</modules>
+	
+	<!-- Akeeba Backup -->
+	<restorepoint>
+		<customdirs>
+			<!-- Add the site and administrator modules -->
+			<dir>modules/mod_acesearch</dir>
+			<dir>administrator/modules/mod_acesearch_admin</dir>
+			<dir>administrator/modules/mod_acesearch_quickicons</dir>
+		</customdirs>
+		<langfiles>
+			<!-- Language files of the modules -->
+			<lang>mod_acesearch</lang>
+			<lang>mod_acesearch_admin</lang>
+			<lang>mod_acesearch_quickicons</lang>
+		</langfiles>
+	</restorepoint>
+	
+	<!-- Finish -->
+</extension>

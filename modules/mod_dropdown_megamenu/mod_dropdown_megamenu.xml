@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade">
+	<name>Dropdown MegaMenu</name>
+	<author>Joomseller Solution</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>Copyright (C) 2008-2012 Joomseller Solutions. All right reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html GNU/GPL version 3, See license.txt</license>
+	<authorEmail>admin@joomseller.com</authorEmail>
+	<authorUrl>www.joomseller.com</authorUrl>
+	<version>1.3</version>
+	<description>MOD_DMM_MODULE_DESC</description>
+	<files>
+		<filename module="mod_dropdown_megamenu">mod_dropdown_megamenu.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>license.txt</filename>
+		<folder>tmpl/</folder>
+		<folder>assets/</folder>
+		<folder>elements/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_dropdown_megamenu.ini</language>
+		<language tag="de-DE">language/de-DE.mod_dropdown_megamenu.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_dropdown_megamenu/elements">
+			<fieldset name="basic">
+				<field
+					name="menutype"
+					type="menu"
+					label="MOD_DMM_SELECT_MENU"
+					description="MOD_DMM_SELECT_MENU_DESC" />
+					
+				<field
+					name="layout"
+					type="layout"
+					default="default"
+					label="MOD_DMM_MENU_LAYOUT"
+					description="MOD_DMM_MENU_LAYOUT_DESC" />
+					
+				<field
+					name="menustyle"
+					type="list"
+					default="left"
+					label="MOD_DMM_MENU_ALIGNMENT"
+					description="MOD_DMM_MENU_ALIGNMENT_DESC">
+					<option value="left">MOD_DMM_LEFT</option>
+					<option value="right">MOD_DMM_RIGHT</option>
+					<option value="center">MOD_DMM_CENTER</option>
+				</field>
+				
+				<field
+					name="special_id"
+					type="text"
+					default="js-meganav"
+					label="MOD_DMM_MODULE_ID"
+					description="MOD_DMM_MODULE_ID_DESC" />
+					
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="js_menu_mega_animation"
+					type="list"
+					default="slide"
+					label="MOD_DMM_SUBMENU_ANIMATION"
+					description="MOD_DMM_SUBMENU_ANIMATION_DESC">
+					<option value="slide">MOD_DMM_SLIDE</option>
+					<option value="fade">MOD_DMM_FADE</option>
+					<option value="none">MOD_DMM_NONE</option>
+				</field>
+				
+				<field name="js_menu_sebmenu_direction"
+					type="list"
+					default="down"
+					label="MOD_DMM_SUBMENU_DIRECTION"
+					description="MOD_DMM_SUBMENU_DIRECTION_DESC">
+					<option value="up">MOD_DMM_UP</option>
+					<option value="down">MOD_DMM_DOWN</option>
+				</field>
+				
+				<field name="js_menu_mouse_action"
+					type="list"
+					default="mouseenter"
+					label="MOD_DMM_MOUSE_ACTION"
+					description="MOD_DMM_MOUSE_ACTION_DESC">
+					<option value="mouseenter">MOD_DMM_MOUSE_ENTER</option>
+					<option value="click">MOD_DMM_MOUSE_CLICK</option>
+				</field>
+				
+				<field name="js_menu_mega_duration"
+					type="text"
+					default="300"
+					label="MOD_DMM_SUBMENU_DURATION"
+					description="MOD_DMM_SUBMENU_DURATION_DESC" />
+					
+				<field name="js_menu_mega_delayhide"
+					type="text"
+					default="300"
+					label="MOD_DMM_HIDE_DURATION"
+					description="MOD_DMM_HIDE_DURATION_DESC" />
+					
+				<field name="menu_images"
+					type="radio"
+					default="1"
+					label="MOD_DMM_SHOW_MENU_ICONS"
+					description="PARAMSHOWMENUICONS">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="menu_background"
+					type="list"
+					default="1"
+					label="MOD_DMM_MENU_IMAGE_TYPE"
+					description="MOD_DMM_MENU_IMAGE_TYPE_DESC">
+					<option value="0">MOD_DMM_IMAGE</option>
+					<option value="1">MOD_DMM_BACKGROUND</option>
+				</field>
+				
+				<field name="mega-colwidth"
+					type="text"
+					default="200"
+					label="MOD_DMM_MEGA_COLUMN_WIDTH"
+					description="MOD_DMM_MEGA_COLUMN_WIDTH_DESC"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,146 @@
+#k2filterable {
+    padding-top: 15px;
+}
+
+#results {
+    width: 60%;
+    float: left;
+}
+
+p#resultsIntro {
+    padding-top: 0;
+}
+
+#resultsIntro, #filtersIntro {
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.result {
+	border-bottom: 1px solid #CCD;
+	padding-bottom: 18px;
+}
+
+.result:last-child {
+	border-bottom: 4px solid #CCD;
+}
+
+.result div {
+	text-align: right;
+}
+
+
+.filterContainer {
+	width: 35%;
+	background: #E3E6EA;
+	float: right;
+	border: 1px solid #ccc;
+}
+
+#filtersIntro {
+    padding: 15px 15px 0 15px;
+}
+
+.filterContainer h4 {
+    color: #0E509C;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.filterContainer li {
+    padding: 2px 0;
+}
+
+.filterContainer hr {
+	width: 90%;
+	height: 1px;
+	border: 0;
+	background-color: #CCD;
+}
+
+.filterContainer * {
+	list-style: none !important;
+}
+
+.filterContainer .descendable.closed {
+	background: url('../images/tree-plus.gif') 4px 0 no-repeat;
+}
+
+.filterContainer .descendable {
+	background: url('../images/tree-minus.gif') 4px 0 no-repeat;
+	margin-bottom: 6px;
+}
+
+.filterContainer .descendable span {
+	padding: 16px 16px 16px 21px;
+}
+
+.filterContainer .descendable span:hover {	
+	cursor: pointer;
+	color: #0E509C;
+}
+
+.filterContainer .descendable li {
+/*    background: url('../images/indent.gif') 0 -5px repeat-y; */
+/*    padding-left: 25px; */
+}
+
+.reset {
+	padding-top: 7px;
+	padding-bottom: 14px;
+	padding-left: 37px;
+}
+
+.centerButton {
+    margin: 20px auto;
+    width: 150px;
+    text-align: center;
+}
+
+.filterButton {
+	padding: 3px 10px;
+	border: 1px solid #C9CFDA;
+	color: #044d9e;
+	font-weight: bold;
+	font-size: 14px;
+	background: #fff;
+}
+.filterButton:hover {
+	border-color: #044d9e;
+	background: #044d9e;
+	color: #fff;
+}
+div.k2filter-details {
+	padding-bottom: 10px;
+}
+div.k2filterableAjaxGrayDiv {
+	text-align: center; 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	background-color: #000; 
+	opacity: 0.1;	
+        filter: alpha(opacity = 10);
+}
+
+
+#filterForm .descendable .node {
+    	background: url('../images/tree-node.gif') 4px 0 no-repeat;
+        margin: 0;
+        padding: 0;
+}
+
+#filterForm .descendable .lastnode {
+        background: url('../images/tree-lastnode.gif') 4px 0 no-repeat;
+        margin: 0;
+        padding: 0;
+}
+
+#filterForm .descendable input {
+        margin-left: 25px;
+}
+
+#filterForm .descendable div {
+    padding: 0;
+}

@@ -1,0 +1,2 @@
+
+window.addEvent('domready',function(){extrafields=new Sortables('#dragable_lists UL',{clone:false,revert:{duration:500,transition:'elastic:out'},opacity:0.7,onComplete:function(element){$(element).removeClass('drag');values=this.serialize(1,function(element,index){return element.getProperty('id').replace('dl_','')}).join(',');$('jform_extrafields').set("value",values);},onStart:function(element,clone){$(element).addClass('drag');}});});

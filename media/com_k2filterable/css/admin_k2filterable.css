@@ -1,0 +1,34 @@
+div.pagetitle.icon-48-k2filterable {
+    background: url(../images/icon-48-k2filterable.png) 0 center no-repeat;
+}
+
+#dragable_lists {
+    float: left;
+}
+
+#dragable_lists ul {    
+    border: 1px solid silver;
+    cursor: pointer;
+    float: left;
+    height: 150px;
+    overflow: auto;
+    width: 170px;
+    margin-right: 10px;
+    background-color: #FFFFBF;
+    font-weight: bold;
+}
+
+#dragable_lists ul:first-child {
+    font-weight: normal;
+}
+
+#dragable_lists .drag {
+    background-color: #146295;
+    color : #fff;
+    cursor: move;
+}
+
+#dragable_lists ul li {
+    padding: 0 10px;
+    font-size: 1.091em;
+}

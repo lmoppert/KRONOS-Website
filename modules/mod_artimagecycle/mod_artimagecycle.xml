@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" position="status" method="upgrade">
+	<name>Art Image Cycle</name>
+	<author>artetics.com</author>
+	<creationDate>November 2010</creationDate>
+	<copyright>Copyright (C) 2010 artetics.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@artetics.com</authorEmail>
+	<authorUrl>www.artetics.com</authorUrl>
+	<version>1.4.7</version>
+	<description><![CDATA[Art Image Cycle: image slider. <br /><br />&copy;&nbsp;<a href="http://www.artetics.com">Artetics.com</a> - Start Point For Your Website.]]></description>
+	<files>
+		<filename module="mod_artimagecycle">mod_artimagecycle.php</filename>
+		<filename module="mod_artimagecycle">js/jquery.js</filename>
+		<filename module="mod_artimagecycle">js/script.js</filename>
+		<filename module="mod_artimagecycle">css/style.css</filename>
+		<folder module="mod_artimagecycle">images</folder>
+	</files>
+	<params>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+		<param name="path" type="text" default="" label="Path" description="Path to images folder" />
+		<param name="numberOfImages" type="text" default="" label="Number of images" description="Number of images. Leave empty to show all images" />
+		<param name="style" type="textarea" default=".pics { height: 232px; width: 232px; padding:0; margin:0; overflow: hidden }
+.pics img { height: 200px; width: 200px; padding: 15px; border: 1px solid #ccc; background-color: #eee; top:0; left:0 }
+.pics img {
+	-moz-border-radius: 10px; -webkit-border-radius: 10px;
+}
+" rows="20" cols="45" label="Content" description="Content" />
+		<param name="effect" type="list" default="fade" label="Effect" description="Image transition effect">
+			<option value="blindX">blindX</option>
+			<option value="blindY">blindY</option>
+			<option value="blindZ">blindZ</option>
+			<option value="cover">cover</option>
+			<option value="curtainX">curtainX</option>
+			<option value="curtainY">curtainY</option>
+			<option value="fade">fade</option>
+			<option value="fadeZoom">fadeZoom</option>
+			<option value="growX">growX</option>
+			<option value="growY">growY</option>
+			<option value="scrollUp">scrollUp</option>
+			<option value="scrollDown">scrollDown</option>
+			<option value="scrollLeft">scrollLeft</option>
+			<option value="scrollRight">scrollRight</option>
+			<option value="scrollHorz">scrollHorz</option>
+			<option value="scrollVert">scrollVert</option>
+			<option value="shuffle">shuffle</option>
+			<option value="slideX">slideX</option>
+			<option value="slideY">slideY</option>
+			<option value="toss">toss</option>
+			<option value="turnUp">turnUp</option>
+			<option value="turnDown">turnDown</option>
+			<option value="turnLeft">turnLeft</option>
+			<option value="turnRight">turnRight</option>
+			<option value="uncover">uncover</option>
+			<option value="wipe">wipe</option>
+			<option value="zoom">zoom</option>
+		</param>
+		<param name="timeout" type="text" default="4000" label="Timeout" description="How many milliseconds will elapse between the start of each transition" />
+		<param name="speed" type="text" default="1000" label="Transition speed" description="Number of milliseconds it will take to transition from one slide to the next" />
+		<param name="loadJQuery" type="list" default="1" label="Load jQuery library" description="Load jQuery javascript library? Choose no if it is always included in your pages">
+		  <option value="1">yes</option>
+		  <option value="0">no</option>
+		</param>
+    <param name="openLinksNewWindow" type="list" default="0" label="Open links in a new window" description="Open links in a new window">
+		  <option value="1">yes</option>
+		  <option value="0">no</option>
+		</param>
+    <param name="showArrows" type="list" default="0" label="Show arrows" description="Show next and previous arrows">
+		  <option value="1">yes</option>
+		  <option value="0">no</option>
+		</param>
+		<param name="showImages" type="list" default="byname" label="Show images" description="Show images">
+			<option value="byname">by name</option>
+			<option value="random">random</option>
+		</param>
+    <param name="lightbox" type="list" default="0" label="Lightbox" description="Lightbox to show when image is clicked. Appropriate lightbox extension should be installed">
+			<option value="0">none</option>
+			<option value="artsexylightbox">Art Sexy Lightbox</option>
+			<option value="artcolorbox">Art Colorbox</option>
+			<option value="artprettyphoto">Art Pretty Photo</option>
+			<option value="artnicebox">Art Nicebox</option>
+		</param>
+    <param name="useSubFolders" type="list" default="0" label="Use subfolders" description="Display images from subfolders">
+		  <option value="1">yes</option>
+		  <option value="0">no</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+        <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+        <field name="path" type="text" default="" label="Path" description="Path to images folder" />
+        <field name="numberOfImages" type="text" default="" label="Number of images" description="Number of images. Leave empty to show all images" />
+				<field name="style" type="textarea" default=".pics { height: 232px; width: 232px; padding:0; margin:0; overflow: hidden }
+.pics img { height: 200px; width: 200px; padding: 15px; border: 1px solid #ccc; background-color: #eee; top:0; left:0 }
+.pics img {
+	-moz-border-radius: 10px; -webkit-border-radius: 10px;
+}
+" rows="20" cols="45" label="Content" description="Content" />
+			<field name="effect" type="list" default="fade" label="Effect" description="Image transition effect">
+				<option value="blindX">blindX</option>
+				<option value="blindY">blindY</option>
+				<option value="blindZ">blindZ</option>
+				<option value="cover">cover</option>
+				<option value="curtainX">curtainX</option>
+				<option value="curtainY">curtainY</option>
+				<option value="fade">fade</option>
+				<option value="fadeZoom">fadeZoom</option>
+				<option value="growX">growX</option>
+				<option value="growY">growY</option>
+				<option value="scrollUp">scrollUp</option>
+				<option value="scrollDown">scrollDown</option>
+				<option value="scrollLeft">scrollLeft</option>
+				<option value="scrollRight">scrollRight</option>
+				<option value="scrollHorz">scrollHorz</option>
+				<option value="scrollVert">scrollVert</option>
+				<option value="shuffle">shuffle</option>
+				<option value="slideX">slideX</option>
+				<option value="slideY">slideY</option>
+				<option value="toss">toss</option>
+				<option value="turnUp">turnUp</option>
+				<option value="turnDown">turnDown</option>
+				<option value="turnLeft">turnLeft</option>
+				<option value="turnRight">turnRight</option>
+				<option value="uncover">uncover</option>
+				<option value="wipe">wipe</option>
+				<option value="zoom">zoom</option>
+			</field>
+			<field name="timeout" type="text" default="4000" label="Timeout" description="How many milliseconds will elapse between the start of each transition" />
+			<field name="speed" type="text" default="1000" label="Transition speed" description="Number of milliseconds it will take to transition from one slide to the next" />
+			<field name="loadJQuery" type="list" default="1" label="Load jQuery library" description="Load jQuery javascript library? Choose no if it is always included in your pages">
+			  <option value="1">yes</option>
+			  <option value="0">no</option>
+			</field>
+      <field name="openLinksNewWindow" type="list" default="0" label="Open links in a new window" description="Open links in a new window">
+        <option value="1">yes</option>
+        <option value="0">no</option>
+      </field>
+      <field name="showArrows" type="list" default="0" label="Show arrows" description="Show next and previous arrows">
+        <option value="1">yes</option>
+        <option value="0">no</option>
+      </field>
+			<field name="showImages" type="list" default="byname" label="Show images" description="Show images">
+				<option value="byname">by name</option>
+				<option value="random">random</option>
+			</field>
+      <field name="lightbox" type="list" default="0" label="Lightbox" description="Lightbox to show when image is clicked. Works for Coin Slider only">
+        <option value="0">none</option>
+        <option value="artsexylightbox">Art Sexy Lightbox</option>
+        <option value="artcolorbox">Art Colorbox</option>
+        <option value="artprettyphoto">Art Pretty Photo</option>
+        <option value="artnicebox">Art Nicebox</option>
+      </field>
+      <field name="useSubFolders" type="list" default="0" label="Use subfolders" description="Display images from subfolders">
+        <option value="1">yes</option>
+        <option value="0">no</option>
+      </field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<metadata>
+        <layout title="COM_K2FILTERABLE_MENU_RESULTS">
+                <message><![CDATA[COM_K2FILTERABLE_MENU_RESULTS_DESC]]></message>
+        </layout>
+	<fields name="params">
+		<fieldset name="basic"
+			label="COM_K2FILTERABLE_MENU_ATTRIBS_LABEL">
+		  <field
+		      name="categoryId"
+		      type="sql"
+		      label="COM_K2FILTERABLE_MENU_ATTRIBS_K2CATEGORY_LABEL"
+		      description="COM_K2FILTERABLE_MENU_ATTRIBS_K2CATEGORY_DESCRIPTION"
+		      query="SELECT `id`,`name` FROM #__k2_categories"
+		      key_field="id"
+		      value_field="name"
+		      >
+		</field>
+		<field
+		      name="resultsIntro"
+		      type="textarea"
+		      label="COM_K2FILTERABLE_MENU_ATTRIBS_RESULTS_INTRO"
+		      description="COM_K2FILTERABLE_MENU_ATTRIBS_RESULTS_INTRO_DESCRIPTION"
+		      cols="40"
+		      rows="3"
+		      />
+		<field
+		      name="filtersIntro"
+		      type="textarea"
+		      label="COM_K2FILTERABLE_MENU_ATTRIBS_FILTERS_INTRO"
+		      description="COM_K2FILTERABLE_MENU_ATTRIBS_FILTERS_INTRO_DESCRIPTION"
+		      cols="40"
+		      rows="3"
+		      />
+		<field
+		      name="k2ItemMenu"
+		      type="menu"
+		      label="COM_K2FILTERABLE_MENU_ATTRIBS_K2ITEM_MENU"
+		      description="COM_K2FILTERABLE_MENU_ATTRIBS_K2ITEM_MENU_DESCRIPTION"
+		      />
+		<field
+		      name="k2Itemid"
+		      type="menuitem"
+		      label="COM_K2FILTERABLE_MENU_ATTRIBS_K2ITEMID"
+		      description="COM_K2FILTERABLE_MENU_ATTRIBS_K2ITEMID_DESCRIPTION"
+		      />
+		</fieldset>
+	</fields>
+</metadata>

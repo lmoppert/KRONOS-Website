@@ -1,0 +1,163 @@
+.gks_main{
+	width:100%;
+	clear:both;
+}
+.gks_chart{
+	position:relative;
+	height:154px;
+	width:auto;
+	clear:both;
+	margin-bottom:10px;
+}
+.gks_loader{
+	height:130px;
+	width:250px;
+	position:absolute;
+	z-index:0;
+	background:#fff;
+	text-align:center!important;
+	line-height: 130px;
+	font-size:10px;
+	color:#aaa;
+	text-transform:uppercase;
+}
+.gks_chart img{
+	position:absolute;
+	z-index:1;
+}
+.gks_timeline{
+	position:absolute;
+	z-index:2;
+	height:154px;
+	width:250px;
+	background:transparent url('timeline.png') no-repeat 0 0;
+	margin-left:-3px;
+}
+.gks_change{
+	color:#aaa;
+	float:right;
+}
+.gks_tooltip_change{
+	color:#aaa;
+}
+.gks_change.plus,
+.gks_tooltip_change.plus{
+	color:green;
+}
+.gks_change.minus,
+.gks_tooltip_change.minus{
+	color:red;
+}
+.gks_trigger{
+	float:left;	
+	margin:12px 0 0 4px;
+	text-indent:-999em;
+	width:6px;
+	height:6px;
+	background:#ccc;
+	display:block;
+	cursor:pointer;
+}
+.gks_value{
+	float:left;	
+	color:#999;
+	margin-left:4px;
+}
+.gks_stock_name{
+	float:left;
+	margin-left:12px;
+	cursor:pointer;
+}
+.gks_stock{
+	color:#333;
+	clear:both;
+	overflow:hidden;
+	width:100%;
+	line-height:26px;
+	border-top: 1px dotted #ddd;
+}
+.gks_stock:first-child{
+	border-top: 1px dotted #ddd;
+}
+.gks_main .first{
+	background:blue;
+}
+.gks_main .second{
+	background:red;
+}
+.gks_main .third{
+	background:orange;
+}
+.gks_main .fourth{
+	background:green;
+}
+.gks_tooltip_data{
+	display:none;
+}
+.gks_tooltip{
+	display:none;
+	position:absolute;
+	z-index:10000000;
+	border:1px solid #ddd;
+	padding:10px;
+	min-height:154px;
+	width:500px;
+	background:#fff;
+	box-shadow: 3px 3px 5px #444;
+	-moz-box-shadow: 3px 3px 5px #444;
+	-webkit-box-shadow: 3px 3px 5px #444;
+}
+
+.gks_tooltip.tp-tooltip2{
+	width:250px;
+}
+.gks_tooltip_chart{
+	float:left;
+	width:250px;
+	height:154px;
+	position:relative;
+}
+.gks_tooltip_timeline{
+	position:absolute;
+	z-index:2;
+	height:154px;
+	width:250px;
+	top:0;
+	left:-3px;
+	background:transparent url('timeline.png') no-repeat 0 0;
+}
+.gks_tooltip_chart img{}
+.gks_tooltip_timeline{}
+.gks_tooltip_datas{
+	float:left;
+	width:220px;
+	margin:0 0 0 30px;
+}
+.gks_tooltip_datas h3{
+	font-family:Georgia,serif;
+	font-size:18px;
+	font-weight:normal;
+	padding:0 0 3px 0;
+}
+.gks_tooltip_datas sub{
+	color:#999;
+	line-height:16px;
+}
+.gks_tooltip_value{
+	display:block;
+	margin:30px 0 0 0;
+	line-height:20px;
+}
+.gks_tooltip_time{
+	display:block;
+	line-height:20px;
+}
+.gks_tooltip_change{
+	display:block;
+	line-height:20px;
+}
+.gks_tooltip_value,
+.gks_tooltip_time,
+.gks_tooltip_change {
+	font-size:11px;
+}

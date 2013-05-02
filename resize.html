@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Resizing Test</title>
+    <script type="text/javascript">
+      function onLoad() {
+        var params = window.location.search.substring( 1 ).split( '&' );
+        var height;
+        for( var i = 0, l = params.length; i < l; ++i ) {
+          var parts = params[i].split( '=' );
+          switch( parts[0] ) {
+          case 'height':
+            height = parseInt( parts[1] );
+            break;
+          }
+        }
+        if( typeof( height ) == 'number' ) {
+          window.top.updateIFrame( height );
+        }
+      }
+
+    window.onload = onLoad;
+    </script>
+  </head>
+  <body>
+    <p>Resizing iFrame...</p>
+  </body>
+
+</html>

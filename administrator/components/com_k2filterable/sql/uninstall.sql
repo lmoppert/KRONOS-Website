@@ -1,0 +1,1 @@
+DROP TABLE `#__k2filterable_group`;

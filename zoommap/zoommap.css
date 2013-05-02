@@ -1,0 +1,23 @@
+@font-face {font-family: 'asap'; src: url(http://beta.kronos-worldwide.com/templates/templatename/fonts/Asap-Regular.otf);}
+body {margin:0; padding:0;}
+#map {font-family:asap, Helvetica, Arial, sans-serif; font-size:12px; position: relative; width: 735px; height: 460px; overflow: hidden; padding:0; margin:0; background-color:#3B6EAB;}
+#returnlink {display: block; position: absolute; bottom: 0; right: 0;  color: white; background: #8fc547 url(images/backArrow.png) 8px 8px no-repeat; padding: 10px 10px 10px 40px; text-decoration:none;}
+
+#map a.bullet {display: block; position: absolute; width: 35px; height: 35px; background: url(images/pin.png) top right no-repeat; text-decoration: none; border: 0 none; z-index: 2; }
+#map img.zoomable {border:2px solid #82b84d; z-index:10; background: url(images/zoomicon.png) bottom right no-repeat;}
+
+#map div.popup { display: none; position: absolute; width: 175px; background: url(images/popupBG.png) top right repeat; z-index: 20; padding: 10px; border: 1px solid #0d4991; }
+#map div.popup h3 {color:#0E509C; font-weight:bold; font-size:16px; background:url(http://kronosww.com/templates/templatename/images/titlebg.png) bottom left repeat-x; padding:0 0 10px; width:100%; margin:0;}
+#map div.popup a {color:#0e509c; text-decoration:none;}
+#map div.popup a:hover {color:#8dc73f}
+#map div.popup .popupcontent {display:inline-block; padding:0 10px 10px; margin:0; width:100%;}
+#map div.popup .popupcontent .facility, #map div.popup .popupcontent .direction {font-size:10px; font-weight:bold;}
+#map div.popup a.close { display: inline-block; float:right; margin-right:10px; font-size:10px; font-weight:bold; }
+
+#map div#hauge-box {left:243px; top:130px;}
+#map div#fredrikstad-box {left:308px; top:108px;}
+#map div#nordenham-box {left:265px; top:225px;}
+#map div#leverkusen-box {left:245px; top:250px;}
+#map div#langerbrugge-box {left:185px; top:250px;}
+#map div#lake-charles-box {left:25px; top:250px;}
+#map div#varennes-box {left:165px; top:170px;}

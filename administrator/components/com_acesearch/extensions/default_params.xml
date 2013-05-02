@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<params group="default_params">
+		<param name="access" type="sql" default="0" query="SELECT id, name FROM #__groups" key_field="id" value_field="name" label="COM_ACESEARCH_EXTENSIONS_VIEW_ACCESS" description="COM_ACESEARCH_EXTENSIONS_VIEW_ACCESS_HELP" />
+		<param name="handler" type="handlerlist" default="1" label="COM_ACESEARCH_EXTENSIONS_HANDLER" description="COM_ACESEARCH_EXTENSIONS_HANDLER_HELP" />
+		<param name="custom_name" type="text" default="" label="COM_ACESEARCH_EXTENSIONS_CUSTOM_NAME" description="COM_ACESEARCH_EXTENSIONS_CUSTOM_NAME_HELP" />
+		<param type="spacer" default="" />
+		<param name="result_limit" type="text" default="" label="COM_ACESEARCH_CONFIG_RESULT_LIMIT" description="COM_ACESEARCH_CONFIG_RESULT_LIMIT_HELP" />
+		<param type="spacer" default="" />
+        <param name="google_more_results_length" type="text" default="" label="COM_ACESEARCH_CONFIG_GOOGLE_MORE_RESULTS_LENGTH" description="COM_ACESEARCH_CONFIG_GOOGLE_MORE_RESULTS_LENGTH_HELP" />
+		<param type="spacer" default="" />
+		<param name="show_desc" type="radio" default="1" label="COM_ACESEARCH_CONFIG_SHOW_DESC" description="COM_ACESEARCH_CONFIG_SHOW_DESC_HELP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_properties" type="radio" default="1" label="COM_ACESEARCH_CONFIG_SHOW_PROPERTIES" description="COM_ACESEARCH_CONFIG_SHOW_PROPERTIES_HELP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_url" type="radio" default="1" label="COM_ACESEARCH_CONFIG_SHOW_URL" description="COM_ACESEARCH_CONFIG_SHOW_URL_HELP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="default_params">
+                <field name="access" type="accesslevel" default="1" label="COM_ACESEARCH_EXTENSIONS_VIEW_ACCESS" description="COM_ACESEARCH_EXTENSIONS_VIEW_ACCESS_HELP" />
+                <field name="handler" type="handlerlist" default="1" label="COM_ACESEARCH_EXTENSIONS_HANDLER" description="COM_ACESEARCH_EXTENSIONS_HANDLER_HELP" />
+                <field name="custom_name" type="text" default="" label="COM_ACESEARCH_EXTENSIONS_CUSTOM_NAME" description="COM_ACESEARCH_EXTENSIONS_CUSTOM_NAME_HELP" />
+                <field type="spacer" />
+                <field name="result_limit" type="text" default="" label="COM_ACESEARCH_CONFIG_RESULT_LIMIT" description="COM_ACESEARCH_CONFIG_RESULT_LIMIT_HELP" />
+                <field type="spacer" />
+                <field name="google_more_results_length" type="text" default="" label="COM_ACESEARCH_CONFIG_GOOGLE_MORE_RESULTS_LENGTH" description="COM_ACESEARCH_CONFIG_GOOGLE_MORE_RESULTS_LENGTH_HELP" />
+                <field type="spacer" />
+				<field name="show_desc" type="radio" default="1" label="COM_ACESEARCH_CONFIG_SHOW_DESC" description="COM_ACESEARCH_CONFIG_SHOW_DESC_HELP">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_properties" type="radio" default="1" label="COM_ACESEARCH_CONFIG_SHOW_PROPERTIES" description="COM_ACESEARCH_CONFIG_SHOW_PROPERTIES_HELP">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_url" type="radio" default="1" label="COM_ACESEARCH_CONFIG_SHOW_URL" description="COM_ACESEARCH_CONFIG_SHOW_URL_HELP">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</metadata>

@@ -1,0 +1,116 @@
+/**
+ * @version		$Id$
+ * @author		Joomseller
+ * @package		Joomla!
+ * @subpackage	Mod_DropDown_MooMenu
+ * @copyright	Copyright (C) 2008 - 2011 by Joomseller Solutions. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl.html GNU/GPL version 3
+ */
+ 
+/* Clearfix
+-------------------------------------------------------------*/
+#js-mainnav { 
+    background-color: #C11900; /* you can change/delete the transparent gradient image or the background color */
+    border-top: 1px solid #3A0700; /* you can change the color of the border */
+} 
+/* lv - 0
+-----------------------------------*/
+/* Styling ---*/
+ul.level0 {
+	border-right: 1px solid #C11900;
+}
+ul.level0 li.mega {
+	background-color: #C11900;
+}
+ul.level0 li.mega a.mega {
+	border-left: 1px solid #C11900;
+	border-right: 1px solid #333333;
+	color: #cccccc;
+}
+ul.level0 li.mega span.menu-desc {
+	color: #999;
+}
+ul.level0 li.over, ul.level0 li.haschild-over {
+	background-color: #FC2100;
+}
+ul.level0 li.active {
+	background-color: #FC2100;
+}
+/* lv - 1 and below
+-----------------------------------*/
+ul.level1 li.mega {
+	background: none;
+}
+/* Layout ---*/
+
+ /* Columns ---*/
+.megacol { float: left; border-top: 1px solid #3A0700;}
+/* Styling ---*/
+ul.level1 li.mega { border-top: 1px dotted #D81900; }
+
+ul.level1 li.first { border-top: 0; }
+
+ul.level1 li.mega a.mega {
+	background: none;
+	border: 0;
+	color: #fff;
+}
+
+
+ul.level1 li.over, 
+ul.level1 li.haschild-over { background: #9B1200; }
+
+ul.level1 li.haschild,
+ul.level1 li.haschild-over {
+	background-image: url(../../images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	padding: 0;
+}
+ul.level1 li.mega a.mega span.menu-title { background: none; padding: 0; }
+
+
+
+ul.level1 li.group { background: none; }
+
+ /* CHILD CONTENT
+-----------------------------------*/
+.childcontent-inner {
+	background-color: #530B00; /*change here the color to match the new color you have set for mainnav */
+	border-right: 1px solid #3A0700;
+	color: #ccc; /* after changing code above, you might want to change this color to make the text color readable  */ 
+    border-color: -moz-use-text-color #3A0700 #3A0700;
+	border-bottom: 4px solid #D01B00;
+}
+.childcontent-inner .group ul li.active {
+	background-color: #9B1200 !important;
+}
+.childcontent .js-moduletable {
+	color: #ccc;
+}
+.childcontent .group h3 {
+	background: none;
+	color: #fff;
+	border-bottom: 1px dotted #D81900;
+}
+.childcontent .js-moduletable a {
+	color: #fff;
+	border-bottom: 1px dotted #ccc;
+}
+.childcontent .js-moduletable a:hover,
+.childcontent .js-moduletable a:focus,
+.childcontent .js-moduletable a:active {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+/* Grouped --- */
+.group-title {
+	border-bottom: 1px solid #D01B00;
+}
+.group-title .menu-title {
+	color: #fff;
+}
+.group-title .menu-desc {
+	color: #999;
+}
+/* reset --- */

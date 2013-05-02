@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset name="main"> 
+    <field name="title" type="text" label="COM_K2FILTERABLE_GROUP_TITLE"
+	   description="COM_K2FILTERABLE_GROUP_TITLE_DESC" class="inputbox" size="30"
+	   />  
+    <field name="extrafields" 
+	   type="sqlmultilistbox" 
+	   label="COM_K2FILTERABLE_GROUP_ADD"
+	   description="COM_K2FILTERABLE_GROUP_ADD_DESC" 
+	   />
+    <field name="fields_type" type="radio" label="COM_K2FILTERABLE_FIELDS_TYPE"
+	   description="COM_K2FILTERABLE_FIELDS_TYPE_DESC" class="radio" 
+	   default="1">
+      <option value="1">COM_K2FILTERABLE_FIELDS_CHECKBOX</option>
+      <option value="0">COM_K2FILTERABLE_FIELDS_RADIO</option>
+    </field>
+    <field name="descends" type="radio" label="COM_K2FILTERABLE_DESCENDS"
+	   description="COM_K2FILTERABLE_DESCENDS_DESC" class="radio" 
+	   default="1">
+      <option value="1">COM_K2FILTERABLE_YES</option>
+      <option value="0">COM_K2FILTERABLE_NO</option>
+    </field>
+    <field name="id" type="hidden" />
+  </fieldset>
+</form>

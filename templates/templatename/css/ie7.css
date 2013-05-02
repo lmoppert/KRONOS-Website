@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* TEMPLATE CSS
+*********************************************/
+
+/* LAYOUT
+*********************************************/
+
+/* HEADER 
+*********************************************/
+
+/* LOGO */
+
+
+/* SLOGAN */
+
+
+/* TOP MENU */
+
+
+/* SEARCH */
+
+
+/* LANGUAGE */
+
+
+
+
+/* FEATURED 
+*********************************************/
+#featured {background:url(../images/featuredbg.png) top center no-repeat; height:373px;}
+
+/* FEATURED MENU */
+/*#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent {left:0 !important;}*/
+#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-app li, #featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-mmtech li ul li, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-app li, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-mmtech li ul li  {display:inline-block; float:left; position:relative;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li {margin-left:8px;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li, #featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a {width:230px; display:inline-block; position:relative;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a .docimg, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a .docimg, #featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a .doctitle, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a .doctitle {display:inline; position:relative; clear:none;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a .doctitle, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.doclist li a .doctitle {width:175px;}
+{padding:0; margin:15px 10px 0 0; float:left;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-mmtech, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-mmtech {width:400px !important;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mmnews .cols3 .childcontent-inner .column1 h3, #featured #featuredmenu #js-mainnav .js-megamenu li.mmnews .cols3 .childcontent-inner .column2 h3,  #featured #featuredmenu #js-mainnav .js-megamenu li.mmnews .cols3 .childcontent-inner .column3 h3, #main #left #js-mainnav .js-megamenu li.mmnews .cols3 .childcontent-inner .column1 h3, #main #left #js-mainnav .js-megamenu li.mmnews .cols3 .childcontent-inner .column2 h3,  #main #left #js-mainnav .js-megamenu li.mmnews .cols3 .childcontent-inner .column3 h3, #featured #featuredmenu #js-mainnav .js-megamenu li.mmcareers .cols2 .childcontent-inner .column1 h3, #featured #featuredmenu #js-mainnav .js-megamenu li.mmcareers .cols2 .childcontent-inner .column2 h3, #main #left #js-mainnav .js-megamenu li.mmcareers .cols2 .childcontent-inner .column1 h3, #main #left #js-mainnav .js-megamenu li.mmcareers .cols2 .childcontent-inner .column2 h3 {margin:0;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mmir .cols2 .childcontent-inner .column2 .moduletable, #main #left #js-mainnav .js-megamenu li.mmir .cols2 .childcontent-inner .column2 .moduletable {margin-top:-20px !important;}
+
+#js-mainnav .js-megamenu div#menuid189 .childcontent-inner ul.menu-app, #js-mainnav .js-megamenu div#menuid190 .childcontent-inner ul.menu-mmtech li, #js-mainnav .js-megamenu div#menuid191 .childcontent-inner ul.menu-mmfacilities li, #js-mainnav .js-megamenu div#menuid192 .childcontent-inner ul.menu-mmdata li, #js-mainnav .js-megamenu div#menuid193 .childcontent-inner ul.menu-mmabout li, #js-mainnav .js-megamenu div#menuid195 .childcontent-inner ul.menu-mmir li {padding-left:15px !important;}
+
+#js-mainnav .js-megamenu div#menuid194 .childcontent-inner .column2 div.moduletable, #js-mainnav .js-megamenu div#menuid194 .childcontent-inner .column3 div.moduletable {display:inline-block; position:relative; padding-top:10px !important;}
+
+
+/* FEATURED SLIDESHOW */
+.nivo-controlNav {display:none;}
+
+
+
+/* MAIN 
+*********************************************/
+#content-block .category-list .pagination ul li {display:inline; text-align:center; float:none;}
+
+/* USER */
+
+
+/* USER LEFT */
+
+
+/* USER RIGHT */
+
+
+/* LEFT */
+
+
+
+/********* CONTENT *********/
+.files {margin-left:-15px; width:100%;}
+.files li.catfile .categorytitle {display:inline-block; position:relative; width:auto; float:left;}
+.files li.catfile .subfile {display:inline-block; position:relative; width:auto;}
+.files li.catfile table, .files li.catfile div, .files li.catfile .subcat {display:none;}
+.files li.filedl .filetitle {width:auto; float:left; display:inline-block; position:relative;}
+.files li.filedl .downloadlink {width:90px; display:inline-block; position:relative;}
+
+
+/* BREADCRUMBS */
+
+
+/* TITLE */
+.componentheading {margin-bottom:15px; display:inline-block;}
+
+/* FEATURED IMAGE */
+
+
+/* CONTENT BLOCK */
+
+
+/* SUB-TITLE */
+
+
+/* RIGHT */
+#right h3 {margin:0 0 -20px -10px !important; clear:both; position:relative; float:left; display:block; width:207px;}
+#right ul.menu {clear:both; position:relative; float:left; display:block; padding-top:20px;}
+#right ul.menu li {clear:both; position:relative; float:left; display:block; width:212px; }
+#right ul.menu li ul {margin-left:0 !important; display:inline-block; position:relative;}
+#right ul.menu li.active:first-child {background:url(../images/hoverbg.png) left top repeat-x;}
+#right ul.menu li.alias-parent-active a {margin-bottom:3px !important; display:inline-block; position:relative;}
+#right ul.menu li.alias-parent-active ul li a {margin-bottom:0 !important;}
+#right ul.menu li.alias-parent-active ul li:first-child {background-position:left 0;}
+
+
+/* BOTTOM USER */
+#bottomuser #bottom ul#download, #bottomuser #bottomleft ul#download, #bottomuser #bottomright ul#download {position:relative; margin-left:-15px;}
+#bottomuser #bottom ul#download li, #bottomuser #bottomleft ul#download li, #bottomuser #bottomright ul#download li {float:left; clear:left; margin-left:15px;}
+#bottomuser #bottom ul#download li a, #bottomuser #bottomleft ul#download li a, #bottomuser #bottomright ul#download li a {display: inline-block; float: left;}
+#bottomuser #bottomright .moduletable-leverkusen {padding:255px 0 0;}
+	
+/* BOTTOM */
+
+
+/* BOTTOM LEFT */
+
+
+/* BOTTOM RIGHT */
+
+
+
+/* FOOTER 
+*********************************************/
+
+
+
+

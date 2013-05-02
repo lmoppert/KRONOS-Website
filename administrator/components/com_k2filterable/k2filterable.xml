@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<extension type="component" version="1.6.0" method="upgrade">
+  <name>COM_K2FILTERABLE</name>
+  <creationDate>October 2011</creationDate>
+  <author>Blue Bridge Development</author>
+  <authorEmail>info@bluebridgedev.com</authorEmail>
+  <authorUrl>http://www.code-haiku.com</authorUrl>
+  <copyright>Blue Bridge Development</copyright>
+  <license>GPL Version 3 or Newer</license>
+  <version>1.1</version>
+  <description><![CDATA[COM_K2FILTERABLE_INSTALL]]></description>
+  <menu>COM_K2FILTERABLE</menu>
+  <files>
+    <filename>index.html</filename>
+    <filename>k2filterable.php</filename>
+    <filename>controller.php</filename>
+    <folder>controllers</folder>
+    <folder>views</folder>
+    <folder>helpers</folder>
+    <folder>models</folder>
+    <folder>language</folder>
+    <filename>gpl-3.0.txt</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.com_k2filterable.ini</language>
+  </languages>
+  <media destination="com_k2filterable" folder="media">  
+    <folder>css</folder>  
+    <folder>images</folder>  
+    <folder>js</folder>  
+    <file>index.html</file>  
+  </media>
+  <install>
+    <sql>
+      <file charset="utf8" driver="mysql">sql/install.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+    </sql>
+  </uninstall>
+  <update>
+    <schemas>
+      <schemapath type="mysql">sql/updates</schemapath>
+    </schemas>
+  </update>
+  <administration>
+    <menu view="cpanel" img="../media/com_k2filterable/images/icon-16-k2filterable.png">COM_K2FILTERABLE</menu>
+    <files folder="admin">
+      <filename>index.html</filename>
+      <filename>k2filterable.php</filename>
+      <filename>gpl-3.0.txt</filename>
+      <filename>controller.php</filename>
+      <filename>lazyLoadList.php</filename>
+      <folder>sql</folder>
+      <folder>controllers</folder>
+      <folder>views</folder>
+      <folder>models</folder>
+      <folder>helpers</folder>
+      <folder>tables</folder>
+    </files>
+    <languages folder="admin/language">
+      <language tag="en-GB">en-GB/en-GB.com_k2filterable.sys.ini</language>
+      <language tag="en-GB">en-GB/en-GB.com_k2filterable.ini</language>
+    </languages>
+  </administration>
+</extension>

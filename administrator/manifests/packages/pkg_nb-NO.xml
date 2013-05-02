@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- $Id: pkg_nb-NO.xml 2243 2012-06-19 20:02:30Z rued $ -->
+<extension type="package" version="2.5">
+  <name>Norwegian Bokmål Language Pack incl. TinyMCE</name>
+  <packagename>nb-NO</packagename>
+  <version>2.5.9.1</version>
+  <creationDate>2013-02-04</creationDate>
+  <author>Norsk Joomla!</author>
+  <authorEmail>oversettelser@norskjoomla.no</authorEmail>
+  <authorUrl>http://www.norskjoomla.no</authorUrl>
+  <description>
+    <![CDATA[
+      <div style="text-align:left;">
+      <h2>Norsk bokmål for Joomla ble installert, inklusive språkfiler for TinyMCE.</h2>
+      <p>Dersom du har installert andre språk enn engelsk og norsk bokmål i Joomla må du påse at du har installert alle de samme for TinyMCE, før du aktiverer 'Automatisk språkvalg' gjennom følgende steg:</p>
+      <p></p>
+      <ol>
+      <li>Utvidelser</li>
+      <li>Programtillegg</li>
+      <li><a href="index.php?option=com_plugins&view=plugins&filter_search=TinyMCE">TinyMCE</a></li>
+      <li>Parametre - Programtillegg</li>
+      <li>Automatisk språkvalg :: Ja</li>
+      <li>Funksjonalitet :: Utvidet (Valgfritt! Om du vil aktivere alle funksjoner i TinyMCE)</li>
+      </ol>
+      <p></p>
+      <p>Dersom du IKKE har alle installerte språk også for TinyMCE bør du ikke aktivere 'Automatisk språkvalg', men heller fylle inn 'Språkkode'. For norsk bokmål er språkkoden 'nb'.</p>
+      <p></p>
+      <p>Pakken for TinyMCE er bygget på pakke fra <a href="http://tinymce.moxiecode.com/i18n/index.php?ctrl=lang&act=index&pr_id=1" target="_blank">tinymce.moxiecode.com</a>, tilpasset for Joomla av <a href="http://www.norskjoomla.no/" target="_blank" title="Norsk Joomla">Norsk Joomla</a> ved Rune Rasmussen.</p>
+      <p></p>
+      <p>Vær grei å melde eventuelle feil eller problemer med oversettelsene i det <a href="http://forum.joomla.org/viewforum.php?f=210" target="_blank" title="Det offisielle norske brukerforumet for Joomla-oversettelser">Norske Joomla!-forumet</a>, eller i <a href="http://joomlacode.org/gf/project/norwegiancore/tracker/" target="_blank" title="Tracker på JoomlaCode">Tracker på JoomlaCode</a>. Dersom du har forbedringsforslag hører vi gjerne om dette også.</p>
+      </div>
+    ]]>
+  </description>
+  <files>
+    <file type="language" client="site" id="nb-NO">site_nb-NO.zip</file>
+    <file type="language" client="administrator" id="nb-NO">admin_nb-NO.zip</file>
+    <file type="file" client="site" id="nb-NO">tinymce_nb-NO.zip</file>
+  </files>
+  <updateservers>
+    <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+  </updateservers>
+</extension>

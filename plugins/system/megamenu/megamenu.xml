@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>System - Megamenu Framework</name>
+	<author>Joomseller</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>Copyright (C) Copyright © 2008 - 2012 Joomseller Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html GNU/GPL version 3, SEE LICENSE.php</license>
+	<authorEmail>admin@joomseller.com</authorEmail>
+	<authorUrl>http://www.joomseler.com</authorUrl>
+	<version>1.0.2</version>
+	<description>MegaMenu Framework - Joomseller Megamenu Framework for Joomla 1.6</description>	
+	<files>
+		<filename plugin="megamenu">megamenu.php</filename>
+		<folder>elements</folder>
+		<folder>params</folder>
+	</files>	
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_megamenu.ini</language>
+		<language tag="de-DE">de-DE.plg_system_megamenu.ini</language>
+    </languages>
+</extension>

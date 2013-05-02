@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.1" client="site" method="upgrade">
+	<name>Left right image slideshow</name>
+	<author>Gopi.R</author>
+	<creationDate>August 2011</creationDate>
+	<copyright>(C) 2010 - 2012 www.gopiplus.com, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>gopiplus@gmail.com</authorEmail>
+	<authorUrl>http://www.gopiplus.com/extensions/2011/07/left-right-image-slideshow-joomla-module/</authorUrl>
+	<version>2.0</version>
+	<description>Left right image slideshow</description>
+	<files>
+		<filename module="mod_left_right_image_slideshow">mod_left_right_image_slideshow.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename>mod_left_right_image_slideshow.xml</filename>
+		<folder>tmpl</folder>
+		<folder>images</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="slideshow_type"
+					type="text"
+					default="jpg"
+					size="10"
+					label="Image type"
+					description="Type of image PNG/GIF/JPG etc. (the default is JPG)." />
+				<field
+					name="slideshow_folder"
+					size="50"
+					type="text"
+					default="modules/mod_left_right_image_slideshow/images"
+					label="Image folder"
+					description="Path to the image folder relative to the site URL (e.g. modules/mod_left_right_image_slideshow/images)." />
+				<field
+					name="slideshow_link"
+					type="text"
+					size="50"
+					default="http://www.gopiplus.com/"
+					label="Image link"
+					description="A URL to redirect to if the image is clicked upon. (e.g. http://www.gopiplus.com/extensions/)" />
+				<field
+					name="slideshow_width"
+					type="text"
+					size="10"
+					default="110"
+					label="Width (px)"
+					description="Enter the width of the slideshow. (e.g 200)" />
+				<field
+					name="slideshow_height"
+					type="text"
+					size="10"
+					default="85"
+					label="Height (px)"
+					description="Enter the height of the slideshow. (e.g 150)" />
+				<field
+					name="slideshow_pause"
+					type="text"
+					size="10"
+					default="3000"
+					label="Slideshow pause"
+					description="Pause time of the slideshow in milliseconds. (e.g 3000)" />
+				<field
+					name="slideshow_cycles"
+					type="text"
+					size="10"
+					default="5"
+					label="Slideshow cycles"
+					description="Gallery will automatically start the slideshow and it will stop number of cycle mentioned in this property. (e.g 5)" />
+				<field
+					name="slideshow_persist"
+					type="text"
+					size="10"
+					default="true"
+					label="Slideshow persist"
+					description="Continue from last viewed slide supported, so this property is true and when the user reloads the page, the slideshow restarts from the last images. (e.g true/false)" />
+				<field
+					name="slideshow_slideduration"
+					type="text"
+					size="10"
+					default="3000"
+					label="Slideshow slideduration"
+					description="Slideshow transition duration in milliseconds. (e.g 300)" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="Module class suffix"
+					description="Module Class Suffix" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

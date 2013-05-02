@@ -1,0 +1,15 @@
+syntax: glob
+
+.DS_Store
+.settings
+.project
+.buildpath
+*.sw?
+*~
+~$*
+logs/*
+tmp/*
+jdownloads/*
+
+
+configuration.php

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a.in-productbtn { width:134px; height:35px; display:block; margin:0 0 10px -10px; padding:10px 70px 10px 12px; overflow:hidden; font-weight:bold;}
+#featured #featuredmenu #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-mmtech, #main #left #js-mainnav .js-megamenu li.mega .childcontent .childcontent-inner ul.menu-mmtech {width:400px !important; display:block;}
+#right ul.menu li.alias-parent-active a {margin-bottom:3px !important; display:inline-block; position:relative;}
+#right ul.menu li.alias-parent-active ul li a {margin-bottom:0 !important;}
+#right ul.menu li.alias-parent-active ul li:first-child {background-position:left 0;}
