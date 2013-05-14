@@ -19,7 +19,7 @@ class modLeftRightImageSlideshowHelper
 	function loadScripts(&$params)
 	{
 		$doc = &JFactory::getDocument();
-		$doc->addScript(JURI::Root(true).'/modules/mod_left_right_image_slideshow/tmpl/jquery.min.js');
+		// $doc->addScript(JURI::Root(true).'/modules/mod_left_right_image_slideshow/tmpl/jquery.min.js');
 		$doc->addScript(JURI::Root(true).'/modules/mod_left_right_image_slideshow/tmpl/left-right-image-slideshow-gallery.js');
 	}
 	
