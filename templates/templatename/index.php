@@ -571,7 +571,7 @@ if (empty($this->_script['text/javascript'])) unset($this->_script['text/javascr
     <div id="overall">
       
       <?php if (($this->countModules('userleft')) && ($this->countModules('userright'))) : ?>
-                <div id="fpcontent">
+                <div id="fpcontent">&nbsp; 
                     <!-- USER LEFT -->
                         <div id="userleft">
                             <jdoc:include type="modules" name="userleft" style="xhtml" />
