@@ -424,6 +424,8 @@ body.iframemap iframe {height:500px !important;width:735px !important}
 #content-block .category td {padding:10px 0; border-bottom:1px solid #A8B4C1;}
 #content-block .category td.list-date {color:#666666; font-size:12px;}
 #content-block .filters {padding:10px 0;}
+#content-block .headernote {font-style:italic; font-size:11px;}
+
 
 /* SUB-TITLE */
 h2 {color:#0E509C; font-size:18px; font-weight:bold; width:auto; position:relative; display:inline-block;}
@@ -442,11 +444,13 @@ h5 {font-size:14px !important; font-weight:bold; color:#0E509C; padding:0; margi
 #content-block .search .search-results {margin:0 0 20px; display:inline-block; clear:both; float:none;}
 #content-block .search .search-results .result-title {display:inline-block; clear:both; float:none; font-weight:bold; position:relative; width:100%;}
 #content-block .search .search-results .result-text {margin:0 0 15px; display:inline-block; clear:both; float:none; padding:0 0 0 15px;}
-#content-block .search .pagination {margin:0 0 20px; display:inline-block; clear:both; float:none; text-align:center;}
-#content-block .search .pagination ul li {list-style-type:none; list-style-image:none; list-style-position:inside; float:left; display:inline-block; position:relative; padding:0 15px; margin:0;}
-#content-block .search .pagination ul li:first-child {padding:0 7px 0 0;}
+#content-block .pagination {margin:0 0 20px; display:inline-block; clear:both; float:none; text-align:center;}
+#content-block .pagination ul li {list-style-type:none; list-style-image:none; list-style-position:inside; float:left; display:inline-block; position:relative; padding:0 15px; margin:0;}
+#content-block .pagination ul li:first-child {padding:0 7px 0 0;}
 #content-block #acesearchForm .acesearch_clear {margin:0 !important;}
-#content-block #acesearchForm #acesearch_pagination, #content-block #acesearchForm #dotttt {display:none;}
+.acesearch_google_results_center {border-left-style: none;}
+#content-block #acesearchForm #acesearch_pagination {border:1px solid #e5e5e5; background: #f5f5f5; padding: 5px; height: 21px;}
+/*#content-block #acesearchForm #acesearch_pagination, #content-block #acesearchForm #dotttt {display:none;}*/
 
 /* RIGHT */
 #right {width:207px; float:right; position:relative; display:inline-block; font-size:12px;}
@@ -570,6 +574,10 @@ a.hp-careersbtn {background:url(../images/btns/careers.png) top left no-repeat; 
 .files li.filedl .filetitle, .files li.filedl .downloadlink {text-decoration:underline;}
 .files li.filedl .downloadlink .jd_download_url {height:auto; margin:0; padding:0; float:left;}
 .files li.filedl .filetitle, .files li.filedl .downloadlink {text-decoration:none;}
+li.filedl .downloadlink a {display:none;}
+#SearchResultDownload {line-height:1.2; font-weight: bold; color: #666; margin-top: 25px;}
+#SearchResultDownload a {display: block; margin-top: 15px;}
+
 
 /* Find a KRONOS Sales Representative */
 #locations #row-country {padding:0 10px 20px 0;}
@@ -602,3 +610,9 @@ ul.category-module li {list-style-type:none !important; list-style-position:insi
 .ie7 .group {zoom:1;}
 .debug {display:none;}
 
+/* Frontend editing */
+#content-block ul.actions li {list-style-type:none; margin:-40px 0 0 -25px;} 
+div.tip {background:#E3E6EA; border:1px solid #A8B4C1; padding:5px 10px;}
+#content-block .item-page {width:100%;}
+#content-block .item-page fieldset {margin:15px 5px; padding:10px; border:1px solid #A8B4C1;}
+#content-block .item-page table.mceLayout tbody tr td {width:98%;}

@@ -38,6 +38,7 @@ if (empty($this->_script['text/javascript'])) unset($this->_script['text/javascr
 <!doctype html>
 
 <head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <jdoc:include type="head" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon" href="<?php echo $tpath; ?>/favicon.ico" />
